@@ -1,0 +1,8 @@
+zone,clients,lookups
+Servers,3,311663
+Trusted,10,155114
+Gaming & IoT,10,33858
+Pi-hole itself,1,2447
+Lab,1,566
+Guest,2,395
+Isolated (igb2),2,326

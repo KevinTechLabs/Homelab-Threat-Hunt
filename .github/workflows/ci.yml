@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  detections:
+    name: Rule-ID lint + tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: No duplicate or out-of-range Wazuh rule IDs
+        run: python scripts/check_rule_ids.py detections/wazuh/*.xml
+      - name: Rule files are well-formed XML
+        run: |
+          for f in detections/wazuh/*.xml; do
+            python -c "import sys, xml.etree.ElementTree as ET; ET.fromstring('<root>' + open(sys.argv[1]).read() + '</root>')" "$f"
+          done
+      - run: pip install pytest
+      - run: pytest -q tests
+      - name: No real addresses or identifiers committed
+        run: |
+          if grep -rnE '192\.168\.(1|10|30|40|50|55|60)\.[0-9]+|[0-9]+\.(1|10|30|40|50|55|60)\.168\.192\.in-addr|tail[0-9a-f]{5,}\.ts\.net|gmail\.com|([0-9a-f]{2}:){5}[0-9a-f]{2}' \
+               --include='*.md' --include='*.py' --include='*.csv' --include='*.json' --include='*.xml' --include='*.txt' . ; then
+            echo "::error::Unsanitized identifier found"; exit 1
+          fi

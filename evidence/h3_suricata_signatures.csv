@@ -1,0 +1,41 @@
+sid,sig,prio,alerts,share
+2210020,SURICATA STREAM ESTABLISHED packet out of window,3,149441,0.633684
+2210045,SURICATA STREAM Packet with invalid ack,3,39593,0.167889
+2210029,SURICATA STREAM ESTABLISHED invalid ack,3,39549,0.167702
+2210044,SURICATA STREAM Packet with invalid timestamp,3,5989,0.025396
+2200075,SURICATA UDPv4 invalid checksum,3,517,0.002192
+2210054,SURICATA STREAM excessive retransmissions,3,215,0.000912
+2210010,SURICATA STREAM 3way handshake wrong seq wrong ack,3,163,0.000691
+2200074,SURICATA TCPv4 invalid checksum,3,115,0.000488
+2221010,SURICATA HTTP unable to match response to request,3,43,0.000182
+2210050,SURICATA STREAM reassembly overlap with different data,3,34,0.000144
+2210036,SURICATA STREAM FIN2 invalid ack,3,17,7.2e-05
+2260001,SURICATA Applayer Wrong direction first Data,3,14,5.9e-05
+2210046,SURICATA STREAM SHUTDOWN RST invalid ack,3,13,5.5e-05
+2210038,SURICATA STREAM FIN out of window,3,12,5.1e-05
+2210023,SURICATA STREAM ESTABLISHED SYNACK resend with different ACK,3,11,4.7e-05
+2200078,SURICATA UDPv6 invalid checksum,3,11,4.7e-05
+2210024,SURICATA STREAM ESTABLISHED SYNACK resend with different seq,3,11,4.7e-05
+2210056,SURICATA STREAM bad window update,3,10,4.2e-05
+2210016,SURICATA STREAM CLOSEWAIT FIN out of window,3,10,4.2e-05
+2231001,SURICATA QUIC error on data,3,10,4.2e-05
+2210030,SURICATA STREAM FIN invalid ack,3,8,3.4e-05
+2210035,SURICATA STREAM FIN2 FIN with wrong seq,3,7,3e-05
+2210022,SURICATA STREAM ESTABLISHED SYNACK resend,3,6,2.5e-05
+2231000,SURICATA QUIC failed decrypt,3,5,2.1e-05
+2221002,SURICATA HTTP request field missing colon,3,4,1.7e-05
+2221013,SURICATA HTTP request header invalid,3,3,1.3e-05
+2221050,SURICATA HTTP too many warnings,3,2,8e-06
+2230002,SURICATA TLS invalid record type,3,2,8e-06
+2221045,SURICATA HTTP Unexpected Request body,3,2,8e-06
+2221029,SURICATA HTTP URI terminated by non-compliant character,3,2,8e-06
+2210007,SURICATA STREAM 3way handshake SYNACK with wrong ack,3,1,4e-06
+2003068,ET SCAN Potential SSH Scan OUTBOUND,2,1,4e-06
+2210055,SURICATA STREAM 3way handshake excessive different SYN/ACKs,3,1,4e-06
+2210042,SURICATA STREAM TIMEWAIT ACK with wrong seq,3,1,4e-06
+2224003,SURICATA IKE weak cryptographic parameters (PRF),3,1,4e-06
+2221030,SURICATA HTTP METHOD terminated by non-compliant character,3,1,4e-06
+2230016,SURICATA TLS multiple SNI extensions,3,1,4e-06
+2224005,SURICATA IKE weak cryptographic parameters (Diffie-Hellman),3,1,4e-06
+2224004,SURICATA IKE weak cryptographic parameters (Auth),3,1,4e-06
+2260002,SURICATA Applayer Detect protocol only one direction,3,1,4e-06

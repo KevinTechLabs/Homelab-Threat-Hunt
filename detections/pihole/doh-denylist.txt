@@ -1,0 +1,14 @@
+# DNS-over-HTTPS resolvers (exact domains). Seen resolving in this hunt: cloudflare-dns.com, doh.dns.apple.com
+cloudflare-dns.com
+mozilla.cloudflare-dns.com
+chrome.cloudflare-dns.com
+one.one.one.one
+dns.google
+dns.google.com
+doh.dns.apple.com
+dns.quad9.net
+dns9.quad9.net
+dns.nextdns.io
+dns.adguard-dns.com
+doh.opendns.com
+doh.cleanbrowsing.org

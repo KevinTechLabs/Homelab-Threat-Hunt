@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy to site.local.json (gitignored) and fill in your real values. These are made up.",
+  "lan_prefix": "172.16.",
+  "zones": {"1": "10.20.1", "2": "10.20.10", "3": "10.20.30", "4": "10.20.40", "5": "10.20.50", "6": "10.20.60"},
+  "upstream_octet": "99",
+  "words": [["MyFirewallName", "pfsense"], ["\\bMYPC\\b", "DESKTOP"], ["myusername", "user"]],
+  "infra": {"172.16.1.10": "kevin-ai (SIEM / CI)", "172.16.1.11": "pi-hole (DNS)", "172.16.1.12": "nexus-ai (AI server)", "172.16.4.10": "kali-lab"}
+}

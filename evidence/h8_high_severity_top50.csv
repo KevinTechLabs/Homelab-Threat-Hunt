@@ -1,0 +1,51 @@
+rule_id,level,agent,desc,alerts
+92910,12,WIN11-LAB,Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.,2926
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\balena_etcher\\app-2.1.6\\balenaEtcher.exe,",1206
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe, possible",716
+80710,10,kevin-ai,Auditd: Device enables promiscuous mode.,442
+92151,12,WIN11-LAB,Binary loaded PowerShell automation library - Possible unmanaged Powershell execution by suspicious process,119
+100204,10,kali-lab,T1552.001: Credential searching with find/grep,109
+92213,15,WIN11-LAB,Executable file dropped in folder commonly used by malware,83
+100203,12,kali-lab,T1552.001: Access to credential file (/etc/shadow),68
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Program Files (x86)\\MSI\\MSI Center\\MSI.TerminalServer.exe, possible pr",54
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Discord\\app-1.0.9262\\Discord.exe, possibl",52
+100222,10,WIN11-LAB,T1057/T1082/T1033: Discovery burst - multiple recon commands in 2 minutes,43
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Discord\\app-1.0.9261\\Discord.exe, possibl",37
+92910,12,WIN11-LAB,Explorer process was accessed by C:\\Program Files\\WindowsApps\\28017CharlesMilette.TranslucentTB_2026.2.0.0_,32
+92043,10,WIN11-LAB,Netsh used to add firewall rule,29
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Temp\\is-3MM75FUZTC.tmp\\imager_2.0.12.tmp,",27
+92058,12,WIN11-LAB,Application Compatibility Database launched,27
+61618,12,WIN11-LAB,Sysmon - Suspicious Process - svchost.exe,20
+92213,15,win11-lab,Executable file dropped in folder commonly used by malware,19
+92910,12,WIN11-LAB,Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Microsoft\\OneDrive\\26.183.0920.0005\\File,15
+92910,12,WIN11-LAB,Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Microsoft\\OneDrive\\26.178.0913.0007\\File,15
+100211,10,kevin-ai,T1543.002: systemd service file change,14
+61643,10,WIN11-LAB,Multiple Sysmon error events,11
+92206,12,WIN11-LAB,"DLL file created by printer spool service, possible malware binary drop from PrintNightmare exploit",10
+92041,10,WIN11-LAB,Value added to registry key has Base64-like pattern,8
+100211,10,kali-lab,T1543.002: systemd service file change,5
+80710,10,kali-lab,Auditd: Device enables promiscuous mode.,4
+92910,12,WIN11-LAB,"Explorer process was accessed by C:\\Users\\user\\AppData\\Local\\Discord\\app-1.0.9260\\Discord.exe, possibl",3
+100220,12,kevin-ai,Vaultwarden: deployment file changed: /opt/vaultwarden/Caddyfile,2
+92041,10,win11-lab,Value added to registry key has Base64-like pattern,2
+80711,10,kali-lab,Auditd: Process ended abnormally.,2
+23505,10,pi-hole,CVE-2026-93990 affects libexpat1-dev,2
+23505,10,pi-hole,CVE-2026-93990 affects libexpat1,2
+100220,12,kevin-ai,Vaultwarden: deployment file changed: /opt/vaultwarden/docker-compose.yml,2
+23505,10,nexus-ai,CVE-2026-93782 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93287 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93786 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93787 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93790 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93793 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93796 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93798 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93799 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93801 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93806 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93810 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93813 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93816 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93817 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93288 affects linux-image-7.0.0-38-generic,1
+23505,10,nexus-ai,CVE-2026-93170 affects linux-image-7.0.0-38-generic,1

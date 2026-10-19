@@ -1,0 +1,79 @@
+zone,client,domain,lookups,period_s,jitter
+Servers,10.20.1.112,ghcr.io,19594,60.0,0.0
+Servers,10.20.1.112,tuf-repo-cdn.sigstore.dev,19544,60.0,0.0
+Servers,10.20.1.112,rekor.sigstore.dev,19527,60.0,0.0
+Servers,10.20.1.112,hc-ping.com,16796,63.0,0.007
+Servers,10.20.1.112,112.1.20.10.in-addr.arpa,4018,302.0,0.0
+Servers,10.20.1.112,1.1.20.10.in-addr.arpa,4011,302.0,0.0
+Servers,10.20.1.112,20.1.20.10.in-addr.arpa,3981,302.0,0.0
+Servers,10.20.1.112,103.1.20.10.in-addr.arpa,3981,302.0,0.0
+Servers,10.20.1.112,grafana.com,1960,600.0,0.0
+Servers,10.20.1.112,go-updater.brave.com,1538,900.0,0.0
+Servers,10.20.1.112,go-updater-1830831421.us-west-2.elb.amazonaws.com,1538,900.0,0.0
+Gaming & IoT,10.20.30.103,api.quago.io,1352,30.0,0.0
+Servers,10.20.1.112,ab.chatgpt.com,1044,600.0,0.0
+Servers,10.20.1.20,go-updater.brave.com,779,900.0,0.0
+Servers,10.20.1.112,variations.brave.com,669,1800.0,0.0
+Servers,10.20.1.112,safebrowsing.brave.com,666,1800.0,0.009
+Gaming & IoT,10.20.30.101,api.quago.io,640,30.0,0.0
+Gaming & IoT,10.20.30.100,api.quago.io,587,30.0,0.0
+Gaming & IoT,10.20.30.106,api.quago.io,572,30.0,0.0
+Servers,10.20.1.112,api.github.com,435,300.0,0.0
+Servers,10.20.1.20,chatgpt.com,395,1873.0,0.082
+Servers,10.20.1.112,cti.wazuh.com,355,3600.0,0.0
+Pi-hole itself,127.0.0.1,1.0.0.127.in-addr.arpa,339,3600.0,0.0
+Pi-hole itself,127.0.0.1,20.1.20.10.in-addr.arpa,339,3600.0,0.0
+Pi-hole itself,127.0.0.1,1.1.20.10.in-addr.arpa,339,3600.0,0.0
+Servers,10.20.1.20,variations.brave.com,339,1800.0,0.0
+Pi-hole itself,127.0.0.1,112.1.20.10.in-addr.arpa,339,3600.0,0.0
+Pi-hole itself,127.0.0.1,102.10.20.10.in-addr.arpa,338,3600.0,0.0
+Servers,10.20.1.20,safebrowsing.brave.com,337,1799.0,0.008
+Servers,10.20.1.20,pool.ntp.org,336,3601.0,0.0
+Servers,10.20.1.20,ws.chatgpt.com,333,1936.0,0.046
+Pi-hole itself,127.0.0.1,105.10.20.10.in-addr.arpa,251,3600.0,0.0
+Servers,10.20.1.112,brave-core-ext.s3.brave.com,245,6000.0,0.0
+Servers,10.20.1.112,114.1.20.10.in-addr.arpa,223,302.0,0.0
+Gaming & IoT,10.20.30.100,userpresence.xboxlive.com,185,900.0,0.0
+Gaming & IoT,10.20.30.100,catalog.gamepass.com,156,1200.0,0.0
+Gaming & IoT,10.20.30.100,v10.events.data.microsoft.com,150,901.0,0.032
+Servers,10.20.1.112,api-iam.intercom.io,146,3001.0,0.0
+Servers,10.20.1.112,collector.github.com,142,3600.0,0.0
+Servers,10.20.1.20,brave-core-ext.s3.brave.com,125,6000.0,0.0
+Gaming & IoT,10.20.30.103,userpresence.xboxlive.com,121,900.0,0.0
+Gaming & IoT,10.20.30.106,userpresence.xboxlive.com,115,900.0,0.0
+Gaming & IoT,10.20.30.103,catalog.gamepass.com,100,1200.0,0.0
+Gaming & IoT,10.20.30.106,catalog.gamepass.com,99,1200.0,0.0
+Gaming & IoT,10.20.30.101,userpresence.xboxlive.com,99,900.0,0.0
+Gaming & IoT,10.20.30.106,v10.events.data.microsoft.com,98,901.0,0.013
+Pi-hole itself,127.0.0.1,10.60.20.10.in-addr.arpa,87,3601.0,0.0
+Gaming & IoT,10.20.30.101,v10.events.data.microsoft.com,84,904.0,0.032
+Gaming & IoT,10.20.30.101,catalog.gamepass.com,80,1200.0,0.0
+Servers,10.20.1.114,go-updater.brave.com,79,900.0,0.0
+Servers,10.20.1.114,go-updater-1830831421.us-west-2.elb.amazonaws.com,79,900.0,0.0
+Servers,10.20.1.112,componentupdater.brave.com,68,18000.0,0.0
+Pi-hole itself,127.0.0.1,100.30.20.10.in-addr.arpa,67,3600.0,0.0
+Servers,10.20.1.20,api-iam.intercom.io,62,3001.0,0.0
+Pi-hole itself,127.0.0.1,100.10.20.10.in-addr.arpa,59,3600.0,0.0
+Servers,10.20.1.112,portainer-io-assets.sfo2.digitaloceanspaces.com,58,21600.0,0.0
+Gaming & IoT,10.20.30.103,a667.playfabapi.com,50,900.0,0.003
+Pi-hole itself,127.0.0.1,103.30.20.10.in-addr.arpa,36,3600.0,0.0
+Servers,10.20.1.114,variations.brave.com,35,1800.0,0.0
+Servers,10.20.1.20,componentupdater.brave.com,34,18000.0,0.0
+Servers,10.20.1.112,4.0.20.172.in-addr.arpa,33,43200.0,0.0
+Servers,10.20.1.112,3.0.20.172.in-addr.arpa,33,43200.0,0.0
+Servers,10.20.1.114,safebrowsing.brave.com,33,1807.0,0.008
+Servers,10.20.1.112,0.122.168.192.in-addr.arpa,33,43200.0,0.0
+Servers,10.20.1.112,2.0.20.172.in-addr.arpa,33,43200.0,0.0
+Servers,10.20.1.112,0.10.20.10.in-addr.arpa,33,43200.0,0.0
+Servers,10.20.1.112,2.0.18.172.in-addr.arpa,33,43200.0,0.0
+Servers,10.20.1.112,b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa,33,43200.0,0.0
+Pi-hole itself,127.0.0.1,101.30.20.10.in-addr.arpa,32,3600.0,0.0
+Servers,10.20.1.112,7.0.21.172.in-addr.arpa,32,43200.0,0.0
+Servers,10.20.1.112,250.255.255.239.in-addr.arpa,32,43200.0,0.0
+Pi-hole itself,127.0.0.1,114.1.20.10.in-addr.arpa,31,3600.0,0.0
+Pi-hole itself,127.0.0.1,106.30.20.10.in-addr.arpa,31,3600.0,0.0
+Servers,10.20.1.112,f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa,31,43200.0,0.0
+Servers,10.20.1.112,0.1.20.10.in-addr.arpa,31,43200.0,0.0
+Servers,10.20.1.112,redirector.brave.com,30,36000.0,0.0
+Servers,10.20.1.112,d1gtt36mgrexoi.cloudfront.net,30,36000.0,0.0
+Trusted + Guest,"(personal devices, summarized)","25 regular pairs: app telemetry, location sharing, Brave/Chrome updaters, WPAD",6093,,

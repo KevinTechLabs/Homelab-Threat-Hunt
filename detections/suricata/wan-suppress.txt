@@ -1,0 +1,18 @@
+# Suricata suppress list for the pfSense WAN interface (H3)
+# Services -> Suricata -> Suppress -> add a list, then Interfaces -> WAN -> Alert Suppression and Filtering.
+#
+# These four stream-engine events were 99.47% of 235,829 alerts in 23 days, mostly on long-lived
+# HTTPS downloads from CDNs (Akamai CDN downloads triggered 217,892 alerts in one hour on Oct 17).
+# They describe TCP state-tracking quirks, not attacks, and on a NATed WAN they can't even
+# name the internal host. Suppressing them changes nothing about what ET signatures detect.
+
+suppress gen_id 1, sig_id 2210020   # SURICATA STREAM ESTABLISHED packet out of window   149,441
+suppress gen_id 1, sig_id 2210045   # SURICATA STREAM Packet with invalid ack             39,593
+suppress gen_id 1, sig_id 2210029   # SURICATA STREAM ESTABLISHED invalid ack             39,549
+suppress gen_id 1, sig_id 2210044   # SURICATA STREAM Packet with invalid timestamp        5,989
+
+# Lead U1: ET SCAN Potential SSH Scan OUTBOUND (2003068) fired on several quick git-over-SSH
+# operations to GitHub. Suppress it only for GitHub's SSH endpoints, so SSH to anywhere else
+# still alerts. These are the 172.182.252.x git addresses GitHub published on Oct 18 2026;
+# refresh the list when GitHub changes it:  curl -s https://api.github.com/meta | jq -r '.git[]'
+suppress gen_id 1, sig_id 2003068, track by_dst, ip [172.182.252.133,172.182.252.135,172.182.252.136]

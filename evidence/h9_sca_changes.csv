@@ -1,0 +1,35 @@
+ts,agent,rule_id,desc
+2026-10-09 19:02:16.189000-07:00,kali-lab,19010,CIS Distribution Independent Linux Benchmark v2.0.0.: Ensure audit log storage size is configured.: Status changed from failed to passed
+2026-10-09 19:02:16.220000-07:00,kali-lab,19010,CIS Distribution Independent Linux Benchmark v2.0.0.: Ensure auditd is installed.: Status changed from failed to passed
+2026-10-09 19:02:16.242000-07:00,kali-lab,19010,CIS Distribution Independent Linux Benchmark v2.0.0.: Ensure auditd service is enabled.: Status changed from failed to passed
+2026-10-09 19:02:24.057000-07:00,kali-lab,19004,SCA summary: CIS Distribution Independent Linux Benchmark v2.0.0.: Score less than 50% (47)
+2026-10-10 10:49:53.527000-07:00,win11-lab,19005,SCA summary: CIS Microsoft Windows 11 Enterprise Benchmark v3.0.0: Score less than 30% (26)
+2026-10-10 10:50:10.481000-07:00,win11-lab,19005,SCA summary: CIS Microsoft Windows 11 Enterprise Benchmark v3.0.0: Score less than 30% (26)
+2026-10-11 20:02:49.944000-07:00,pi-hole,19010,Center for Internet Security Debian Linux 13 Benchmark: Ensure nftables default deny firewall policy.: Status changed from failed to passed
+2026-10-11 20:02:57.568000-07:00,pi-hole,19004,SCA summary: Center for Internet Security Debian Linux 13 Benchmark: Score less than 50% (41)
+2026-10-12 08:00:27.691000-07:00,pi-hole,19011,Center for Internet Security Debian Linux 13 Benchmark: Ensure nftables default deny firewall policy.: Status changed from passed to failed
+2026-10-12 08:00:31.259000-07:00,pi-hole,19004,SCA summary: Center for Internet Security Debian Linux 13 Benchmark: Score less than 50% (41)
+2026-10-16 00:06:59.652000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd access is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.671000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd Banner is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.698000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured.: Status changed from passed to failed
+2026-10-16 00:06:59.724000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd GSSAPIAuthentication is disabled.: Status changed from passed to failed
+2026-10-16 00:06:59.741000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd HostbasedAuthentication is disabled.: Status changed from passed to failed
+2026-10-16 00:06:59.760000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd IgnoreRhosts is enabled.: Status changed from passed to failed
+2026-10-16 00:06:59.786000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd LoginGraceTime is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.805000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd LogLevel is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.828000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd MaxAuthTries is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.848000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd MaxSessions is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.867000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd MaxStartups is configured.: Status changed from passed to failed
+2026-10-16 00:06:59.887000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd PermitEmptyPasswords is disabled.: Status changed from passed to failed
+2026-10-16 00:06:59.906000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd PermitRootLogin is disabled.: Status changed from passed to failed
+2026-10-16 00:06:59.925000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd PermitUserEnvironment is disabled.: Status changed from passed to failed
+2026-10-16 00:06:59.944000-07:00,kevin-ai,19011,CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Ensure sshd UsePAM is enabled.: Status changed from passed to failed
+2026-10-16 00:07:03.317000-07:00,kevin-ai,19003,SCA summary: CIS Ubuntu Linux 26.04 LTS Benchmark v2.0.0.: Score less than 80% (60)
+2026-10-16 17:46:46.418000-07:00,pi-hole,19010,Center for Internet Security Debian Linux 13 Benchmark: Ensure nftables default deny firewall policy.: Status changed from failed to passed
+2026-10-16 17:46:54.674000-07:00,pi-hole,19004,SCA summary: Center for Internet Security Debian Linux 13 Benchmark: Score less than 50% (41)
+2026-10-17 04:32:27.383000-07:00,pi-hole,19011,Center for Internet Security Debian Linux 13 Benchmark: Ensure nftables default deny firewall policy.: Status changed from passed to failed
+2026-10-17 04:32:30.948000-07:00,pi-hole,19004,SCA summary: Center for Internet Security Debian Linux 13 Benchmark: Score less than 50% (41)
+2026-10-17 18:07:39.286000-07:00,pi-hole,19010,Center for Internet Security Debian Linux 13 Benchmark: Ensure nftables default deny firewall policy.: Status changed from failed to passed
+2026-10-17 18:07:47.540000-07:00,pi-hole,19004,SCA summary: Center for Internet Security Debian Linux 13 Benchmark: Score less than 50% (41)
+2026-10-18 07:30:30.435000-07:00,pi-hole,19011,Center for Internet Security Debian Linux 13 Benchmark: Ensure nftables default deny firewall policy.: Status changed from passed to failed
+2026-10-18 07:30:34.003000-07:00,pi-hole,19004,SCA summary: Center for Internet Security Debian Linux 13 Benchmark: Score less than 50% (41)

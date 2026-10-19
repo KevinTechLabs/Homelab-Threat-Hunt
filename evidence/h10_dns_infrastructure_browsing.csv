@@ -1,0 +1,5 @@
+host,lookups,web_browsing_lookups,share
+kevin-ai (SIEM / CI),296149,17020,0.057
+pi-hole (DNS),10586,7288,0.688
+nexus-ai (AI server),4928,1061,0.215
+kali-lab,566,346,0.611

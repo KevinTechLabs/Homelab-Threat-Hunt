@@ -1,0 +1,18 @@
+# Raw exports and parsed data never leave the lab
+exports/
+parsed/
+data/
+*.pkl
+*.tgz
+*.gz
+*.bz2
+alerts.json
+filter.log*
+alerts.log*
+eve.json*
+__pycache__/
+.pytest_cache/
+.venv/
+
+# Real addressing plan and names used by the sanitizer
+scripts/site.local.json

@@ -1,0 +1,61 @@
+zone,kind,src,dst,proto,dport,blocks
+Trusted,explicit block rule 125,10.20.10.105,10.20.60.10,udp,41641,84
+Isolated (igb2),explicit block rule 153,10.20.60.10,10.20.60.1,udp,5351,74
+Isolated (igb2),explicit block rule 153,10.20.60.10,10.20.10.105,udp,41641,51
+Gaming & IoT,default deny (stale TCP state),10.20.30.101,23.211.177.236,tcp,443,46
+Isolated (igb2),explicit block rule 153,10.20.60.10,10.20.60.1,udp,1900,38
+Trusted,default deny (stale TCP state),10.20.10.100,23.56.109.72,tcp,80,28
+Trusted,default deny (stale TCP state),10.20.10.100,23.61.212.9,tcp,443,21
+Trusted,default deny (stale TCP state),10.20.10.105,199.165.136.100,tcp,443,19
+Servers (LAN),default deny (stale TCP state),10.20.1.112,192.200.0.102,tcp,443,17
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,23.61.212.9,tcp,443,15
+Trusted,default deny (stale TCP state),10.20.10.105,157.240.11.12,tcp,443,15
+Trusted,default deny (stale TCP state),10.20.10.100,23.56.109.68,tcp,80,14
+Trusted,default deny (stale TCP state),10.20.10.105,17.57.144.122,tcp,5223,13
+Servers (LAN),default deny (stale TCP state),10.20.1.20,192.200.0.102,tcp,443,13
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,184.28.98.115,tcp,443,12
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,104.254.149.230,tcp,443,12
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,23.211.177.73,tcp,443,12
+Gaming & IoT,default deny (stale TCP state),10.20.30.101,150.171.109.154,tcp,443,12
+Trusted,default deny (stale TCP state),10.20.10.100,23.45.173.140,tcp,80,10
+Trusted,default deny (stale TCP state),10.20.10.105,192.200.0.102,tcp,443,10
+Isolated (igb2),explicit block rule 153,10.20.60.10,10.20.10.100,udp,41641,10
+Servers (LAN),default deny (stale TCP state),10.20.1.112,208.111.40.216,tcp,443,10
+Trusted,default deny (stale TCP state),10.20.10.100,23.45.173.152,tcp,80,10
+Trusted,explicit block rule 125,10.20.10.100,10.20.60.10,udp,41641,10
+Servers (LAN),explicit block rule 63,192.0.2.165,192.200.0.109,tcp,80,9
+Trusted,explicit block rule 66,10.20.1.103,10.20.1.1,udp,67,9
+Trusted,default deny (stale TCP state),10.20.10.100,23.45.173.146,tcp,80,9
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,150.171.109.148,tcp,443,9
+Servers (LAN),default deny (stale TCP state),10.20.1.112,199.165.136.101,tcp,443,9
+Servers (LAN),default deny (stale TCP state),10.20.1.112,140.82.113.26,tcp,443,8
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,23.61.212.9,tcp,443,8
+Servers (LAN),explicit block rule 63,192.0.2.165,208.111.40.216,tcp,443,8
+Trusted,default deny (stale TCP state),10.20.10.104,20.201.200.66,tcp,443,6
+Trusted,default deny (stale TCP state),10.20.10.104,199.46.35.121,tcp,443,6
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,23.62.177.125,tcp,443,6
+Trusted,default deny (stale TCP state),10.20.10.100,104.18.41.99,tcp,443,6
+Gaming & IoT,default deny (stale TCP state),10.20.30.101,104.254.148.200,tcp,443,6
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,23.61.214.7,tcp,443,6
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,150.171.109.148,tcp,443,6
+Servers (LAN),default deny (stale TCP state),10.20.1.20,208.111.40.216,tcp,443,5
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,23.62.177.125,tcp,80,5
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,23.56.109.202,tcp,80,5
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,146.75.94.248,tcp,443,5
+Trusted,default deny (stale TCP state),10.20.10.104,23.61.212.9,tcp,443,4
+Trusted,default deny (stale TCP state),10.20.10.105,208.111.40.216,tcp,443,4
+Trusted,default deny (stale TCP state),10.20.10.104,23.62.176.9,tcp,443,4
+Trusted,default deny (stale TCP state),10.20.10.104,10.20.1.112,tcp,1514,4
+Gaming & IoT,default deny (stale TCP state),10.20.30.101,23.14.132.9,tcp,443,4
+Trusted,default deny (stale TCP state),10.20.10.104,23.199.0.7,tcp,443,3
+Trusted,default deny (stale TCP state),10.20.10.104,184.29.57.140,tcp,443,2
+Gaming & IoT,default deny (stale TCP state),10.20.30.109,23.62.176.9,tcp,443,2
+Trusted,default deny (stale TCP state),10.20.10.100,23.199.0.7,tcp,443,2
+Trusted,default deny (stale TCP state),10.20.10.100,10.20.1.112,tcp,1514,2
+Servers (LAN),default deny (stale TCP state),172.17.0.3,52.250.42.157,tcp,443,2
+Gaming & IoT,default deny (stale TCP state),10.20.30.101,54.187.226.221,tcp,443,2
+Trusted,default deny (stale TCP state),10.20.10.104,23.99.199.208,tcp,443,2
+Trusted,default deny (stale TCP state),10.20.10.104,20.201.200.33,tcp,443,2
+Trusted,default deny (stale TCP state),10.20.10.104,40.65.111.94,tcp,443,2
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,23.62.176.9,tcp,443,1
+Gaming & IoT,default deny (stale TCP state),10.20.30.100,35.93.196.235,tcp,443,1

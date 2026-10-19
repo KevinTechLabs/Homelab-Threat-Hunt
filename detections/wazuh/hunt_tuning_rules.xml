@@ -1,0 +1,97 @@
+<!--
+  Detection changes that came out of the October 2026 hunt.
+  ID block 100400-100419 is reserved for this file; nothing else uses it
+  (checked with scripts/check_rule_ids.py).
+
+  Deploy: copy to /var/ossec/etc/rules/zz_hunt_tuning_rules.xml on the manager (keep the zz_ prefix).
+  Wazuh loads rule files alphabetically, and a rule with <if_sid> must load AFTER its parent:
+  100401/100402/100405/100406 extend Purple-Team rules in local_rules.xml, so this file must sort after it,
+  or Wazuh logs "Empty 'if_sid' value ... will be ignored" and silently skips them.
+  Then check:  /var/ossec/bin/wazuh-analysisd -t  and  grep -i if_sid /var/ossec/logs/ossec.log
+-->
+
+<group name="windows,sysmon,hunt_tuning,">
+
+  <!-- H6. Wazuh 92910 ("Explorer process was accessed ... possible process injection") fired 5,083
+       times at level 12 in 7 days. Every one requested an access mask WITHOUT the rights that
+       injection needs: PROCESS_CREATE_THREAD (0x2), PROCESS_VM_OPERATION (0x8), PROCESS_VM_WRITE (0x20).
+       Instead of one allow-rule per application (100100 Spotify, 100103 OneDrive), demote on the
+       access mask itself, so ANY binary that asks for write/thread rights still alerts at level 12.
+       Masks below are the ones observed: 0x40 dup-handle, 0x1040, 0x1410 query+read, 0x101411. -->
+  <rule id="100400" level="3">
+    <if_sid>92910</if_sid>
+    <field name="win.eventdata.grantedAccess" type="pcre2">^0x(40|1040|1410|101411)$</field>
+    <description>Tuned: $(win.eventdata.sourceImage) opened Explorer without write or thread rights ($(win.eventdata.grantedAccess)), not injection</description>
+    <mitre><id>T1055</id></mitre>
+  </rule>
+
+  <!-- H8. Tailscale runs "ipconfig /flushdns" and "/registerdns" whenever its tunnel changes, which
+       fed 41 of 44 "discovery burst" (100222) alerts. Demoting the single-command rule (100221) for
+       this parent keeps those runs out of the burst count; manual ipconfig still counts. -->
+  <rule id="100401" level="3">
+    <if_sid>100221</if_sid>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)\\Tailscale\\tailscaled\.exe$</field>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)ipconfig(\.exe)?"?\s+/(flushdns|registerdns)\s*$</field>
+    <description>Tuned: Tailscale refreshed DNS (ipconfig /flushdns or /registerdns)</description>
+  </rule>
+
+</group>
+
+<group name="audit,hunt_tuning,">
+
+  <!-- H7. 100202 (T1087.001 account enumeration) fired 23,272 times on the lab host in two sessions.
+       85.4% came from Wazuh's own agent (syscheckd + modulesd reading /etc/passwd) and 7.4% more
+       from polkitd. Matching on the exact binary path keeps every other reader - including a web
+       shell or service account with no login session - at level 8. -->
+  <rule id="100402" level="3">
+    <if_sid>100202</if_sid>
+    <field name="audit.exe" type="pcre2">^(/var/ossec/bin/wazuh-(syscheckd|modulesd)|/usr/lib/polkit-1/polkitd)$</field>
+    <description>Tuned: $(audit.exe) read the account database (Wazuh FIM / polkit), not enumeration</description>
+    <mitre><id>T1087.001</id></mitre>
+  </rule>
+
+  <!-- H7. 100204 (T1552.001 credential searching with find/grep) matched 109 times; exactly ONE was a
+       credential search (Atomic test: find / -path */.aws/credentials). The rest were the
+       phpsessionclean cron job, Brave's desktop-entry lookup, short system pipelines (grep ^tcp etc.) and
+       my interactive shell. Keep the alert only when the arguments look like a credential hunt.
+       Uses negate="yes" (Wazuh 4.x); verify with wazuh-logtest on your version. -->
+  <rule id="100405" level="3">
+    <if_sid>100204</if_sid>
+    <match type="pcre2" negate="yes">(?i)(cred|passw|\.aws|id_rsa|id_ed25519|\.ssh/|shadow|token|secret|\.pem|\.kdbx|\.key\b)</match>
+    <description>Tuned: find/grep without credential-looking arguments</description>
+    <mitre><id>T1552.001</id></mitre>
+  </rule>
+
+  <!-- H7. 100203 (/etc/shadow access) fired 68 times: 45 were unix_chkpwd, the helper PAM uses to
+       verify every sudo and login password, and 11 were the Wazuh agent. Those two binaries
+       reading shadow is how Linux works; anything else still alerts at level 12. -->
+  <rule id="100406" level="3">
+    <if_sid>100203</if_sid>
+    <field name="audit.exe" type="pcre2">^(/usr/sbin/unix_chkpwd|/var/ossec/bin/wazuh-(syscheckd|modulesd))$</field>
+    <description>Tuned: $(audit.exe) read /etc/shadow (PAM password check / Wazuh), not credential access</description>
+    <mitre><id>T1552.001</id></mitre>
+  </rule>
+
+</group>
+
+<group name="ossec,hunt_tuning,">
+
+  <!-- H2. Agent stop (506) and disconnect (504) alert at level 3, which nobody sees. On the
+       always-on hosts, a stopped agent is exactly what an attacker does first (T1562.001,
+       impair defenses). nexus-ai and the lab/desktop machines are left out on purpose:
+       they are powered off routinely and would page every night. -->
+  <rule id="100403" level="10">
+    <if_sid>506</if_sid>
+    <match type="pcre2">Agent stopped: '(kevin-ai|pi-hole)-</match>
+    <description>Always-on sensor stopped: Wazuh agent on an always-on server was stopped</description>
+    <mitre><id>T1562.001</id></mitre>
+  </rule>
+
+  <rule id="100404" level="10">
+    <if_sid>504</if_sid>
+    <match type="pcre2">Agent disconnected: '(kevin-ai|pi-hole)-</match>
+    <description>Always-on sensor lost: Wazuh agent on an always-on server disconnected</description>
+    <mitre><id>T1562.001</id></mitre>
+  </rule>
+
+</group>

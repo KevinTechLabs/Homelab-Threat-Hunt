@@ -1,0 +1,8 @@
+<!-- Excerpt of the Purple-Team rule file (IDs only), as deployed on Oct 9 -->
+<group name="audit,purple_team,">
+  <rule id="100201" level="10"><if_group>audit</if_group><description>T1070.003: Bash history tampering</description></rule>
+  <rule id="100202" level="8"><if_group>audit</if_group><description>T1087.001: Local account enumeration</description></rule>
+</group>
+<group name="windows,purple_team,">
+  <rule id="100220" level="12"><if_sid>60000</if_sid><description>T1070.001: Security log cleared</description></rule>
+</group>

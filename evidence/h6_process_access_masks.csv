@@ -1,0 +1,11 @@
+source,mask,injection_rights,alerts
+OneDriveSetup.exe,0x40,False,2926
+balenaEtcher.exe,0x40,False,1206
+OneDrive.exe,0x40,False,672
+Discord.exe,0x40,False,92
+MSI.TerminalServer.exe,0x1410,False,54
+OneDrive.exe,0x101411,False,42
+TranslucentTB.exe,0x1410,False,32
+FileSyncConfig.exe,0x40,False,30
+imager_2.0.12.tmp,0x40,False,27
+OneDrive.exe,0x1040,False,2

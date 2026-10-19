@@ -1,0 +1,52 @@
+{
+  "vaultwarden_last_alert": "2026-10-09 07:35:01.654000-07:00",
+  "purple_team_first_alert": "2026-10-09 19:06:38.401000-07:00",
+  "kali_last_alert": "2026-10-11 21:31:45.336000-07:00",
+  "lifecycle_alert_levels": [
+    3
+  ],
+  "suricata_alerts": 235829,
+  "suricata_internal_addresses": [
+    "192.0.2.57"
+  ],
+  "suricata_top4_share": 0.9947,
+  "suricata_checksum_days": [
+    "2026-09-26"
+  ],
+  "firewall_window": [
+    "2026-10-16 15:12:09",
+    "2026-10-18 15:58:25"
+  ],
+  "sysmon_92910_alerts": 5083,
+  "sysmon_92910_with_injection_rights": 0,
+  "audit_100202_total": 23273,
+  "audit_100202_auid_unset": 21951,
+  "audit_100205_total": 2801,
+  "audit_100205_auid_unset": 2799,
+  "audit_100207_total": 2667,
+  "audit_100207_auid_unset": 2412,
+  "audit_100202_wazuh_self": 19879,
+  "audit_100202_tunable": 21590,
+  "wazuh_alerts": 100110,
+  "wazuh_level10plus": 7203,
+  "wazuh_window": [
+    "2026-10-03 17:02:51.286000-07:00",
+    "2026-10-18 15:52:16.374000-07:00"
+  ],
+  "dns_lookups": 504369,
+  "dns_window": [
+    "2026-10-04 15:50:43.180499792-07:00",
+    "2026-10-18 15:49:21.552805185-07:00"
+  ],
+  "dns_pairs_analysed": 844,
+  "dns_regular_pairs": 102,
+  "dns_high_entropy_parents_top5_housewide": [
+    "CDN",
+    "azure.com",
+    "CDN",
+    "amazonaws.com",
+    "cloudfront.net"
+  ],
+  "dns_high_entropy_names": 1206,
+  "dns_txt_heavy_domains": 0
+}

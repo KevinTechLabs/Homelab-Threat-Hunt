@@ -1,0 +1,13 @@
+domain,zone,status,reply,lookups
+_dns.resolver.arpa,Gaming & IoT,special domain (blocked by Pi-hole),NODATA,41
+_dns.resolver.arpa,Guest,special domain (blocked by Pi-hole),NODATA,9
+_dns.resolver.arpa,Trusted,special domain (blocked by Pi-hole),NODATA,985
+cloudflare-dns.com,Trusted,cached (stale),BLOB,1
+cloudflare-dns.com,Trusted,cached (stale),IP,1
+cloudflare-dns.com,Trusted,forwarded,BLOB,5
+cloudflare-dns.com,Trusted,forwarded,IP,5
+doh.dns.apple.com,Gaming & IoT,forwarded,CNAME,2
+doh.dns.apple.com,Trusted,forwarded,CNAME,22
+mask.icloud.com,Gaming & IoT,special domain (blocked by Pi-hole),NXDOMAIN,280
+mask.icloud.com,Guest,special domain (blocked by Pi-hole),NXDOMAIN,6
+mask.icloud.com,Trusted,special domain (blocked by Pi-hole),NXDOMAIN,7226

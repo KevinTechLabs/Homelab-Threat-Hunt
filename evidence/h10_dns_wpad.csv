@@ -1,0 +1,3 @@
+domain,zone,reply,lookups
+wpad.home.arpa,Trusted,NXDOMAIN,876
+wpad.<tailnet>.ts.net,Trusted,NXDOMAIN,420
